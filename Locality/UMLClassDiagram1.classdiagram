@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d122ad99-6d33-424c-9236-c7051f8b9c62" name="UMLClassDiagram1" linkedPackageId="d8f46bbf-5013-4121-9b99-825755e7dce0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="609c56de-7e90-4b8f-a95c-f923e509641d">
+      <profileInstance Id="449f73b6-1e21-4486-b4b3-9faf98028001" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="53f87ec2-62d5-442c-ad05-28e2392b0875">
+      <profileInstance Id="4f1d758b-2c3d-4cc5-885e-229d4ec2e31c" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed2e2486-bef5-40e8-8cdd-6ac286b71ebd" name="Country" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="575e88d0-a86d-41af-9fcd-e7e7089191cc" />
+        <suppliersInternal>
+          <interfaceRealization Id="d6ca7180-f132-4b5e-8511-069a26644178">
+            <interfaceMoniker Id="f1698ba8-a3ac-4592-8b00-9bbfd57b754e" LastKnownName="Locality" />
+            <elementDefinition Id="47d58793-6ff1-4a45-beeb-bc125136d7ee" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="7a0c98a6-a6c6-4157-afd6-b990e709181b" isDerived="false" sourceEndRoleName="Country" targetEndRoleName="Address" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e64285a0-ea9d-4ccb-af55-28dc5b925135" LastKnownName="Street" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9922cab9-03cc-4239-8874-9aaded49e796" name="Country" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="fd8491c8-c5b8-4273-b374-13897866b7e5" name="Lower" value="1">
+                      <elementDefinition Id="f449105d-9358-4aa0-a84a-54e2cae05d00" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="f799ac96-6ee0-4b2a-9249-ce75d4f6adca" name="Upper" value="*">
+                      <elementDefinition Id="5ab550a1-12d2-45b2-a512-ae9e465ab8cd" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2f508a10-f1e7-4d5b-8666-000c5f5f43d2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81406c01-3baf-4dc1-bb34-f69b8a0e3900" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5a97444f-ad4e-4461-b5e8-e55dfff3abd3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="049289d7-f8fe-49fe-a5ec-b4424742f185" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1a1e5c9e-9d36-45f9-a273-6d35339df09e" name="State" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="79710d97-3f90-4ce6-9ca4-2d0ed8b475de" />
+        <suppliersInternal>
+          <interfaceRealization Id="eed44dbb-fc4d-4fed-914b-ae4758d90cff">
+            <interfaceMoniker Id="f1698ba8-a3ac-4592-8b00-9bbfd57b754e" LastKnownName="Locality" />
+            <elementDefinition Id="43b43396-8925-4d96-8426-4e2ed91fb525" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="48ef84ab-a269-406e-b124-984f7102f2f7" isDerived="false" sourceEndRoleName="State" targetEndRoleName="Address" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e64285a0-ea9d-4ccb-af55-28dc5b925135" LastKnownName="Street" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="997fc114-6235-4712-aa7d-5efc53d52426" name="State" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="00ae6e35-d3f7-4a4c-a4a6-0fd1f8e89d5a" name="Lower" value="1">
+                      <elementDefinition Id="bc50515f-9835-4c98-b1ae-407a09ecb920" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="ed0b4d30-b273-40d2-a310-8ee6fbb1d3ed" name="Upper" value="*">
+                      <elementDefinition Id="7eb2eeca-b507-4356-8d45-dea2e2f5d306" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="badcee2c-1a67-43a4-85be-8800885612c6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8452462e-f3ac-4dd3-bd27-662cf88ddef8" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="cb65202f-03a1-44e3-8521-626f5cbd5af1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b6ae6a9-8865-494b-ab0e-02df6b052ea5" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e64285a0-ea9d-4ccb-af55-28dc5b925135" name="Street" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="08663cb7-1101-4f18-af56-14eb27b6d22d" />
+        <suppliersInternal>
+          <interfaceRealization Id="79220e21-bd94-4a30-a329-1b754572ad57">
+            <interfaceMoniker Id="84fdc904-8d14-4c7a-9d6b-6ea00301b838" LastKnownName="Address" />
+            <elementDefinition Id="91a56e48-3035-4dc8-a2d7-11b4bf1cf31c" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="5f524fb0-8b97-4f08-ba9c-3a839feabad2" name="Company Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="293a516b-25ce-4342-abfc-8fbc5319bc87" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3d020b3-6194-4522-998d-5e3bd9f6f6d2" name="City" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="45c63600-f13e-46b0-894a-fe727b807cb5" />
+        <suppliersInternal>
+          <interfaceRealization Id="c4c52152-4c32-4fc2-aeba-b176b4ef4440">
+            <interfaceMoniker Id="f1698ba8-a3ac-4592-8b00-9bbfd57b754e" LastKnownName="Locality" />
+            <elementDefinition Id="059d9b07-9b27-47d8-81ea-4d70b7d2af2a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="fe2c6358-0e01-4a73-9a31-c398b4aa189f" isDerived="false" sourceEndRoleName="City" targetEndRoleName="Address" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e64285a0-ea9d-4ccb-af55-28dc5b925135" LastKnownName="Street" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bdf6776f-a9d3-4d7e-99b9-027419642d42" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="1f850464-2ef4-409f-b288-4e3ff4648641" name="Lower" value="1">
+                      <elementDefinition Id="8f83ce30-23ef-400e-8dd4-4cf54f726225" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="e41ad8aa-b41c-4490-bf4b-c2033820f2cc" name="Upper" value="*">
+                      <elementDefinition Id="1dea3b9b-9de1-46da-af20-c14f8acf1beb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="0382cc5b-a80c-429a-bc51-e79efe376b6f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43173f4e-6a53-44b4-9b5d-f7c5e430a025" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b7432be1-a859-4970-86a8-9e92246aa369" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="51a7310e-b24e-40fc-844c-09ee6dd583f8" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="fff4ebd3-9070-469e-b980-0986c1bd5082" name="City" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0750359-d192-4c30-9220-5ef1fecb2b07" />
+          </property>
+          <property Id="a3063bf2-89bc-4a0f-862a-15aec10dc4e1" name="District" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5564b83-a5cf-46d3-8b27-77dcbd64d208" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="84fdc904-8d14-4c7a-9d6b-6ea00301b838" name="Address" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5058748b-9734-40c7-9a5f-9c67cf1fed95" />
+        <ownedAttributes>
+          <property Id="acd969cb-262a-4600-b3f4-e344892fbab2" name="Steet" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3ff066f8-84cc-4416-866d-208d3d19600f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="987b2c1a-e4c2-4380-925f-9d9303c411b8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="d2367b4c-b76e-4502-a715-383e7fe5d8bb" name="Street2" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33f17e30-8ea4-4143-b13e-419ab4df4ffe" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c7a9bae5-b170-45c7-aa85-6df3e10ed13c" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="b0a18e99-5898-48ab-885e-24f6ed5f6db4" name="Zip" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b48c906-83da-46be-a107-2aa874ff6b7f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="31926ea4-b8e7-4c4e-b271-3a11a777aa62" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="f1698ba8-a3ac-4592-8b00-9bbfd57b754e" name="Locality" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8ccf8f6-4a36-46a3-8af6-9128e9dd3232" />
+        <ownedAttributes>
+          <property Id="841ec7fb-23d4-4cdc-984d-836eb12d05a7" name="TwoDigit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f9d89b1-3518-42f4-bec2-aa31cb2d1039" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1afbeb07-5fc2-47a7-8d10-8598357df42d" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="e0b5555b-c522-44df-a971-4c10ed5f3025" name="ThreeDigit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33912b2e-b5db-473d-8005-436a1ea00334" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2f36c5da-2b0e-468b-9eab-441675c99038" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="56fca79f-bc28-43c3-affb-2b04124cb7f8" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="319c5cd6-7363-4477-9e89-c3a2090ae155" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="deefc87a-2caa-4704-afc7-6e545cb369c8" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="deefc87a-2caa-4704-afc7-6e545cb369c8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2f36c5da-2b0e-468b-9eab-441675c99038" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1afbeb07-5fc2-47a7-8d10-8598357df42d" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="31926ea4-b8e7-4c4e-b271-3a11a777aa62" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="987b2c1a-e4c2-4380-925f-9d9303c411b8" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c7a9bae5-b170-45c7-aa85-6df3e10ed13c" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="d8f46bbf-5013-4121-9b99-825755e7dce0" name="Locality">
+    <elementDefinition Id="88b9981b-c5fd-4480-9d83-b34ff02f431b" />
+  </package>
+</logicalClassDesignerModel>
